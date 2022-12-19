@@ -1,0 +1,6 @@
+.bg-gradient-light {
+    background-image: linear-gradient(to right, lightblue, darkblue);
+    text-align: center;
+    color: whitesmoke;
+}
+

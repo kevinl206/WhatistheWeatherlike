@@ -10,15 +10,67 @@
 rel="stylesheet"
  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
  crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+ integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <section class="hero">
-            <div class="hero-body is-flex gradient-bg-color is-justify-content-center"></div>"
-    </section>
+            <div class="container col-12 h-25 p-1 jumbotron jumbotron-fluid bg-gradient-light ">
+              <h1 class="title has-text-white">Weather Dashboard</h1>
+            </div>
+        </section>
+        <body>
+            <aside class="float-left">
+              <label for="citySearch" class="form-label"><h2>Search for a City:<h2></label>
+              <input class="form-control" list="datalistOptions" id="citySearch" placeholder="Search a city">
+              <br>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="citySearch()" id="searchbox">Search</button>
+              <br>
+              <ul class = "previous-cities">
+              </ul>
+              <hr class="mt-2 mb-3"/>
+              <div class ="list-group" id=" cities"></div>
+              <div class ="btn-group-vertical" id ='presets'>
+                <button class = "rounded"type="button" id="WA"> Seattle </button>
+                <br>
+                <button class = "rounded"type="button" id="CA">Las Vegas</button>
+                <br>
+                <button class = "rounded"type="button" id="CA">Los Angeles</button>
+                <br>
+                <button class = "rounded"type="button" id="OR">Portland</button>
+                <br>
+                <button class = "rounded"type="button" id="SF">San Francisco</button>
+                <br>
+                <button class = "rounded"type="button" id="NY">New York</button>
+                <br>
+                <button class = "rounded"type="button" id="LA">New Orleans</button>
+                <br>
+            </div>
+          </aside>
+          
 
+          <main class="float-left">
+            <div class="container-fluid py-5 center-block" id= "current-city">
+                <h1 class="display-5 fw-bold" id="city"></h1>
+                <p class="col-md-8 fs-4" id="temp"></p>
+                <p class="col-md-8 fs-4" id="wind"></p>
+                <p class="col-md-8 fs-4" id="humidity"></p>
+                <p class="col-md-8 fs-4" id="uv"></p>
+            </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3>5-Day Forecast</h3>
     </header>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" 
+    integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" 
+    crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" 
 integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" 
 crossorigin="anonymous" 
