@@ -21,7 +21,7 @@ function weatherStats(response) {
     var cityInfo = document.getElementById(('city'))
     var tempInfo = document.getElementById(('temp'))
     var windInfo = document.getElementById(('wind'))
-    var humInfo = document.getElementById(('hum'))
+    var humInfo = document.getElementById(('humidity'))
     // var uvInfo = document.getElementById(('uv'))
 
     var currentDate = new Date()
