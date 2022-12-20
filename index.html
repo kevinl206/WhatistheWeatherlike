@@ -24,7 +24,8 @@ rel="stylesheet"
             </div>
         </section>
         <body>
-            <aside class="float-left">
+            <section class="search-panel">
+                <div class="search-box">
               <label for="citySearch" class="form-label"><h2>Search for a City:<h2></label>
               <input class="form-control" list="datalistOptions" id="citySearch" placeholder="Search a city">
               <br>
@@ -32,49 +33,90 @@ rel="stylesheet"
               <br>
               <ul class = "previous-cities">
               </ul>
-              <hr class="mt-2 mb-3"/>
-              <div class ="list-group" id=" cities"></div>
-              <div class ="btn-group-vertical" id ='presets'>
-                <button class = "rounded"type="button" id="WA"> Seattle </button>
-                <br>
-                <button class = "rounded"type="button" id="CA">Las Vegas</button>
-                <br>
-                <button class = "rounded"type="button" id="CA">Los Angeles</button>
-                <br>
-                <button class = "rounded"type="button" id="OR">Portland</button>
-                <br>
-                <button class = "rounded"type="button" id="SF">San Francisco</button>
-                <br>
-                <button class = "rounded"type="button" id="NY">New York</button>
-                <br>
-                <button class = "rounded"type="button" id="LA">New Orleans</button>
-                <br>
-            </div>
-          </aside>
-          
+            </header>
 
-          <main class="float-left">
+           <div class="container">
+          <main class="d-flex justify-content-center">
             <div class="container-fluid py-5 center-block" id= "current-city">
                 <h1 class="display-5 fw-bold" id="city"></h1>
                 <p class="col-md-8 fs-4" id="temp"></p>
                 <p class="col-md-8 fs-4" id="wind"></p>
                 <p class="col-md-8 fs-4" id="humidity"></p>
-                <p class="col-md-8 fs-4" id="uv"></p>
+                <img src="" alt="" id="currentIcon"> 
+                <!-- <p class="col-md-8 fs-4" id="uv"></p>
             </div>
+        </div>
 
-          <div class="container">
-            <div class="row">
+             <div class="d-flex justify-content-center">
               <div class="col">
                 <h3>5-Day Forecast</h3>
-    </header>
+                <div class="col-12 col-md-9"> -->
+                    <!-- <section class="card mt-2" id="current-forecast">
+                      <div class="card-body">
+                        <div class="d-flex flex-row">
+                          <h2
+                            class="card-title align-self-center"
+                            id="searched-city"
+                          ></h2>
+                        </div> -->
+
+
+
+    
+        <div class="d-flex justify-content-center">
+          <div class="col">
+            <h3>5-Day Forecast</h3>
+            <div class="col-12 col-md-9">
+
+    <div class="d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+            Forecast Information
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                Forecast Information
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                Forecast Information
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                Forecast Information
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                Forecast Information
+            </div>
+        </div>
+    </div>
+
+</main>
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" 
     integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" 
     crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" 
 integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" 
 crossorigin="anonymous" 
-referrerpolicy="no-referrer"></script>
+referrerpolicy="no-referrer"></script> -->
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
