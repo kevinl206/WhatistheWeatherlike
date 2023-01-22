@@ -1,7 +1,9 @@
 .bg-gradient-light {
-    background-image: linear-gradient(to right, lightgreen, darkblue);
+    background-image: linear-gradient(to right,white, lightblue, darkblue);
     text-align: center;
     color: whitesmoke;
+    border-radius: 20px;
+    -webkit-text-stroke: 2px black;
 }
 
 * {
@@ -12,6 +14,7 @@
 
 body {
     margin: 5px;
+    background: url(./img/weatherBG.jpeg) no-repeat center center/cover;
 }
 
 main {
@@ -46,12 +49,12 @@ section {
     min-height: 8vh;
 } */
 
-/* aside {
-    padding: 6px;
-    width: 20vw;
-    height: 90vh;
-} */
-.search-panel {
+aside {
+    background-color: #044f97;
+    border-radius: 15px;
+    border: 1px solid #023362;
+}
+/* .search-panel {
     width: 25%;
     margin: 10px 20px 0 20px;
     padding: z0px 0 20px 10px;
@@ -60,7 +63,7 @@ section {
 
 .search-button-panel {
     margin-left: -52px;
-}
+} */
 
 
 .form-control {
@@ -72,8 +75,38 @@ section {
     background-color: lightblue;
 }
 
+
+.card-header {
+    background-color: blue;
+    color: white;
+}
+
+.card-body {
+    background-color: lightblue;
+    
+}
+.card-container {
+    /* position: relative;
+    display:inline-block; */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
 .card {
     padding-top: 50px;
+}
+.current-conditions {
+    border: 1px solid #C0C0C0;
+    border-right: none;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+.current-results {
+    width: 75%;
+    padding-bottom: 10px;
+    visibility: hidden;
+    
+   
 }
 
 .pervious-cities {
@@ -82,11 +115,7 @@ section {
 }
 
 main {
-    width: 75vw;
-    justify-content: right;
-    padding-left: 24px;
-    padding-top: 9px;
-    
+    display: flex;
 }
 
 .col {

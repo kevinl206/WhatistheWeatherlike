@@ -13,16 +13,22 @@ function citySearch() {
   .then((data) => {
     weatherStats(data);
   });
+  $(".current-results").addClass("visible");
+
+  
 }
+
+
 
 function weatherStats(response) {
     console.log(response)
-
+  
+    var cityImg = document.getElementById(('currentImg'))
     var cityInfo = document.getElementById(('city'))
     var tempInfo = document.getElementById(('temp'))
     var windInfo = document.getElementById(('wind'))
     var humInfo = document.getElementById(('humidity'))
-    // var uvInfo = document.getElementById(('uv'))
+    
 
     var currentDate = new Date()
     var month = currentDate.getMonth() + 1
@@ -33,5 +39,6 @@ function weatherStats(response) {
     tempInfo.innerHTML = "Temperature: " + Math.floor(((response.main.temp-273)*1.8)+32) + "&#8457;"
     windInfo.innerText = "Wind Speed: " + response.wind.speed
     humInfo.innerText = "Humidity: " + response.main.humidity
-    // uvInfo.innerText = "UV: " + response
+ 
 }
+
